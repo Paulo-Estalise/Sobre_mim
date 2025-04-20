@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paulo Estalise | Front-End Dev</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --white: #ffffff;
+      --light-gray: #cccccc;
+      --dark-bg: #000000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--dark-bg);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 0;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 3px solid var(--white);
+      margin-bottom: 1.5rem;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+
+    .cyber-border {
+      padding: 2rem;
+      margin: 2rem 0;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+    }
+
+    .glow-text {
+      color: var(--light-gray);
+    }
+
+    section h2 {
+      text-align: center;
+      margin: 3rem 0 1rem;
+      font-size: 2rem;
+      color: var(--white);
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 4rem 0;
+    }
+
+    .social-link {
+      font-size: 2.5rem;
+      color: var(--white);
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      color: var(--light-gray);
+      transform: scale(1.1);
+    }
+
+    .github-projects {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .project-item {
+      flex: 1 1 30%;
+      background-color: rgba(255, 255, 255, 0.03);
+      padding: 1rem;
+      border: 1px solid #ffffff22;
+      text-align: center;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-item:hover {
+      transform: translateY(-10px);
+      border-color: var(--white);
+    }
+
+    .project-item iframe {
+      width: 100%;
+      height: 200px;
+      background-color: #000;
+      border: none;
+    }
+
+    .caption {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: var(--light-gray);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .profile-pic {
+        width: 160px;
+        height: 160px;
+      }
+      .github-projects {
+        flex-direction: column;
+        align-items: center;
+      }
+      .project-item {
+        width: 100%;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #000;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #666;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+     
+      <h1>PAULO ESTALISE</h1>
+      <div class="cyber-border">
+        <p class="glow-text" style="font-size: 1.2rem;">
+          &lt;Desenvolvedor Front-End | Aprendendo Java & Python/&gt;
+        </p>
+      </div>
+    </header>
+
+    <section class="cyber-border">
+      <h2>Sobre Mim</h2>
+      <p class="glow-text">Desenvolvedor Front-End com expertise em criar interfaces modernas e responsivas. Atualmente mergulhando no universo do Java e Python para expandir meus horizontes no desenvolvimento full-stack.</p>
+      <p class="glow-text" style="margin-top: 1rem;">Minha paixão por tecnologia se manifesta na criação de soluções inovadoras que combinam design impactante com performance excepcional. Sempre em busca de desafios complexos que me permitam evoluir constantemente.</p>
+    </section>
+
+    <section>
+      <h2>Projetos Destaque</h2>
+      <div class="github-projects">
+        <div class="project-item">
+          <iframe src="https://github.com/USUARIO/PROJETO1"></iframe>
+          <p class="caption">Projeto 1 - Interface com React</p>
+        </div>
+        <div class="project-item">
+          <iframe src="https://github.com/USUARIO/PROJETO2"></iframe>
+          <p class="caption">Projeto 2 - API com Node.js</p>
+        </div>
+        <div class="project-item">
+          <iframe src="https://github.com/USUARIO/PROJETO3"></iframe>
+          <p class="caption">Projeto 3 - App com Flutter</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/seuusuario" class="social-link" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/seuusuario" class="social-link" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
