@@ -1,204 +1,180 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Paulo Estalise | Front-End Dev</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --white: #ffffff;
-      --light-gray: #cccccc;
-      --dark-bg: #000000;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background: var(--dark-bg);
-      color: var(--white);
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    header {
-      text-align: center;
-      padding: 4rem 0;
-    }
-
-    .profile-pic {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      border: 3px solid var(--white);
-      margin-bottom: 1.5rem;
-      object-fit: cover;
-    }
-
-    h1 {
-      font-size: 3.5rem;
-      margin-bottom: 1rem;
-      color: var(--white);
-    }
-
-    .cyber-border {
-      padding: 2rem;
-      margin: 2rem 0;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 12px;
-    }
-
-    .glow-text {
-      color: var(--light-gray);
-    }
-
-    section h2 {
-      text-align: center;
-      margin: 3rem 0 1rem;
-      font-size: 2rem;
-      color: var(--white);
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 4rem 0;
-    }
-
-    .social-link {
-      font-size: 2.5rem;
-      color: var(--white);
-      transition: all 0.3s ease;
-    }
-
-    .social-link:hover {
-      color: var(--light-gray);
-      transform: scale(1.1);
-    }
-
-    .github-projects {
-      display: flex;
-      gap: 2rem;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .project-item {
-      flex: 1 1 30%;
-      background-color: rgba(255, 255, 255, 0.03);
-      padding: 1rem;
-      border: 1px solid #ffffff22;
-      text-align: center;
-      border-radius: 12px;
-      transition: transform 0.3s ease;
-    }
-
-    .project-item:hover {
-      transform: translateY(-10px);
-      border-color: var(--white);
-    }
-
-    .project-item iframe {
-      width: 100%;
-      height: 200px;
-      background-color: #000;
-      border: none;
-    }
-
-    .caption {
-      margin-top: 1rem;
-      font-size: 1rem;
-      color: var(--light-gray);
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2.2rem;
-      }
-      .profile-pic {
-        width: 160px;
-        height: 160px;
-      }
-      .github-projects {
-        flex-direction: column;
-        align-items: center;
-      }
-      .project-item {
-        width: 100%;
-      }
-    }
-
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #000;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #666;
-      border-radius: 4px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Estalise | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script href="./js/script.js" defer ></script>
+   
 </head>
 <body>
-  <div class="container">
-    <header>
-     
-      <h1>PAULO ESTALISE</h1>
-      <div class="cyber-border">
-        <p class="glow-text" style="font-size: 1.2rem;">
-          &lt;Desenvolvedor Front-End | Aprendendo Java & Python/&gt;
-        </p>
-      </div>
+    <!-- Header Ajustado -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span>PE</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="cyber-border">
-      <h2>Sobre Mim</h2>
-      <p class="glow-text">Desenvolvedor Front-End com expertise em criar interfaces modernas e responsivas. Atualmente mergulhando no universo do Java e Python para expandir meus horizontes no desenvolvimento full-stack.</p>
-      <p class="glow-text" style="margin-top: 1rem;">Minha paixão por tecnologia se manifesta na criação de soluções inovadoras que combinam design impactante com performance excepcional. Sempre em busca de desafios complexos que me permitam evoluir constantemente.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Olá, sou </p>
+                <h1 class="hero-title">Paulo Estalise</h1>
+                <h2 class="hero-title">Desenvolvedor Web</h2>
+                <p class="hero-description">
+                    Tenho domínio sólido em HTML e CSS, e estou me aprofundando continuamente em linguagens fundamentais 
+                    para o desenvolvimento moderno, como JavaScript, Java e Python.
+                </p>
+                <a href="#projects" class="cta-button">Conheça meus projetos</a>
+            </div>
+        </div>
     </section>
 
-    <section>
-      <h2>Projetos Destaque</h2>
-      <div class="github-projects">
-        <div class="project-item">
-          <iframe src="https://github.com/USUARIO/PROJETO1"></iframe>
-          <p class="caption">Projeto 1 - Interface com React</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Tenho me dedicado também ao desenvolvimento de chatbots e soluções inteligentes que proporcionam 
+                        uma experiência mais interativa e funcional aos usuários. Busco sempre unir técnica e criatividade 
+                        nos projetos que desenvolvo, mantendo o foco na construção de interfaces intuitivas, responsivas e acessíveis.
+                    </p>
+                    <p>
+                        Além da tecnologia, tenho uma grande paixão pela música nas horas vagas, gosto de tocar violino, 
+                        o que me ajuda a manter o equilíbrio entre lógica e sensibilidade.
+                    </p>
+                    <p>
+                        Acredito que o aprendizado é um processo contínuo, e estou sempre em busca de novos desafios e 
+                        conhecimentos para evoluir como profissional e como pessoa.
+                    </p>
+                    <ul class="skills-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Desenvolvimento de Chatbots</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <!-- Substitua pela sua imagem -->
+                        <img src="./img/foto-paulo.jpg" alt="Paulo Estalise">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project-item">
-          <iframe src="https://github.com/USUARIO/PROJETO2"></iframe>
-          <p class="caption">Projeto 2 - API com Node.js</p>
-        </div>
-        <div class="project-item">
-          <iframe src="https://github.com/USUARIO/PROJETO3"></iframe>
-          <p class="caption">Projeto 3 - App com Flutter</p>
-        </div>
-      </div>
     </section>
 
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/seuusuario" class="social-link" target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/seuusuario" class="social-link" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-  </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projetos Destacados</h2>
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/logo-ClimaCheck.png" alt="ClimaCheck">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ClimaCheck</h3>
+                        <p class="project-description">
+                            Um site desenvolvido para consulta de clima e alertas de desastres naturais
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">HTML5</span>
+                            <span class="tech-item">CSS3</span>
+                            <span class="tech-item">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://challengefiap1tdspo.github.io/climaCheck/" class="project-link"><i class="fab fa-github"></i> Visualize Nosso Site</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/logo-hc.png" alt="Hospital das Clínicas">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Hospital das Clínicas</h3>
+                        <p class="project-description">
+                            Um site interativo com objetivo de auxiliar idosos a acessar consultas online
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">HTML5</span>
+                            <span class="tech-item">CSS3</span>
+                            <span class="tech-item">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://challengefiap1tdspo.github.io/ChallengeFrontEnd/" class="project-link"><i class="fab fa-github"></i> Visualize Nosso Site</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/idea.png" alt="E-commerce">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema básico de e-commerce</h3>
+                        <p class="project-description">
+                            Pedidos e-commerce de móveis
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">HTML5</span>
+                            <span class="tech-item">CSS3</span>
+                            <span class="tech-item">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://paulo-estalise.github.io/ProjetoCoderJavaScript/" class="project-link"><i class="fab fa-github"></i> Visualize Nosso Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="contact-text">
+                    Estou sempre aberto a novas oportunidades e colaborações. Se você tem um projeto em mente ou quer 
+                    bater um papo sobre tecnologia, música ou qualquer outro assunto, não hesite em me contatar!
+                </p>
+                <a href="mailto:phestalise@gmail.com" class="cta-button">Diga Olá</a>
+                <div class="social-links">
+                    <a href="https://github.com/Paulo-Estalise" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Todos Direitos Reservados</p>
+        </div>
+    </footer>
+
+  
 </body>
 </html>
